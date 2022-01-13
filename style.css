@@ -45,7 +45,7 @@ body {
   background-size: contain;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
     padding: 3.5em 4.6em 2.5em;
     background: url(./images/bg-desktop.svg) no-repeat var(--clr-violet);
@@ -61,7 +61,7 @@ h2 {
   margin-bottom: 3.6em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .header {
     margin-bottom: 5.3em;
   }
@@ -71,7 +71,7 @@ h2 {
   width: 120px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .logo {
     width: 212px;
   }
@@ -82,7 +82,7 @@ h2 {
   row-gap: 4.25em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .main {
     grid-template-columns: auto 1fr;
     column-gap: 3.25em;
@@ -93,7 +93,7 @@ h2 {
   text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .copy {
     margin-top: 2.75em;
     text-align: initial;
@@ -102,23 +102,15 @@ h2 {
 
 .title {
   margin-bottom: 0.5em;
-}
-
-@media (min-width: 600px) {
-  .title {
-    font-size: 2.5rem;
-  }
+  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .prose {
   line-height: 1.5;
   margin-bottom: 1.4em;
-}
-
-@media (min-width: 600px) {
-  .prose {
-    font-size: 1.15rem;
-  }
+  font-size: 1.15rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
 .button {
@@ -135,7 +127,7 @@ h2 {
   cursor: pointer;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .button {
     font-size: 1.15rem;
     padding: 0.7em 3.6em 0.9em;
@@ -153,7 +145,7 @@ h2 {
   margin-top: 4em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .footer {
     margin-top: 1.625em;
   }
@@ -165,7 +157,7 @@ h2 {
   column-gap: 0.5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .social {
     justify-content: flex-end;
     column-gap: 1em;
@@ -177,16 +169,11 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 30px;
+  width: clamp(30px, 3vw, 40px);
   height: 30px;
+  height: clamp(30px, 3vw, 40px);
   border: 1px solid white;
   border-radius: 50%;
-}
-
-@media (min-width: 600px) {
-  .social__link {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 .social__link:hover,
